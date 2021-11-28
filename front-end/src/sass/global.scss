@@ -1,0 +1,60 @@
+@import '~bootswatch/dist/lumen/variables';
+@import '~bootstrap/scss/bootstrap';
+@import '~bootswatch/dist/lumen/bootswatch';
+
+.pageData {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  min-width: 0;
+  min-height: calc(100vh - 100px);
+}
+
+.footer {
+  background: #e9ecef;
+  line-height: 46px;
+}
+
+.btn-sm {
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.list-group-item {
+  padding: 5px 15px;
+}
+
+.jumbotron {
+  padding: 10px;
+  .lead {
+    margin-bottom: 0;
+  }
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.sort {
+  cursor: pointer;
+  background-image: url('/images/sort_both.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+  // svg {
+  //   float: right;
+  // }
+  &.activeASC {
+    color: #000;
+    background-image: url('/images/sort_asc.png');
+    // svg {
+    //   transform: rotate(180deg);
+    // }
+  }
+  &.activeDSC {
+    background-image: url('/images/sort_desc.png');
+    color: #000;
+    // svg {
+    //   transform: rotate(0);
+    // }
+  }
+}
